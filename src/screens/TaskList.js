@@ -42,6 +42,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontFamily: commonStyles.fontFamily,
+    color: commonStyles.colors.secunday,
     fontSize: 50,
   },
 });
