@@ -31,13 +31,11 @@ function getCheckView(doneAt) {
   if (doneAt != null) {
     return (
       <View style={styles.done}>
-        <Icon name='check' size={20} color='#FFF'></Icon>
+        <Icon name="check" size={20} color="#FFF" />
       </View>
     );
   } else {
-    return (
-      <View style={styles.pending}></View>
-    );
+    return <View style={styles.pending} />;
   }
 }
 
