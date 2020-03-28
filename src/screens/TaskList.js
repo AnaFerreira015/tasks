@@ -11,7 +11,8 @@ import Task from '../components/Task';
 
 export default class TaskList extends Component {
   state = {
-    tasks: [{
+    tasks: [
+      {
         id: Math.random(),
         desc: 'Comprar Livro de React Native',
         estimateAt: new Date(),
