@@ -116,5 +116,8 @@ const styles = StyleSheet.create({
   },
   iconBar: {
     flexDirection: 'row',
+    marginHorizontal: 20,
+    justifyContent: 'flex-end',
+    marginTop: Platform.OS === 'ios' ? 40 : 10,
   },
 });
