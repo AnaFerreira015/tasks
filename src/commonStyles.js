@@ -3,5 +3,6 @@ export default {
   colors: {
     secunday: '#FFF',
     mainText: '#222',
+    subText: '#555',
   },
 };
