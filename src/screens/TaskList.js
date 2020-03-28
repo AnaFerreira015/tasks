@@ -15,7 +15,7 @@ export default class TaskList extends Component {
         <ImageBackground source={todayImage} style={styles.background}>
           <View style={styles.titleBar}>
             <Text style={styles.title}>Hoje</Text>
-            <Text>{today}</Text>
+            <Text style={styles.subtitle}>{today}</Text>
           </View>
         </ImageBackground>
         <View style={styles.taskList}>
@@ -44,6 +44,13 @@ const styles = StyleSheet.create({
     fontFamily: commonStyles.fontFamily,
     color: commonStyles.colors.secunday,
     fontSize: 50,
+    marginLeft: 20,
+    marginBottom: 20,
+  },
+  subtitle: {
+    fontFamily: commonStyles.fontFamily,
+    color: commonStyles.colors.secunday,
+    fontSize: 20,
     marginLeft: 20,
     marginBottom: 20,
   },
