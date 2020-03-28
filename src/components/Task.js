@@ -14,7 +14,7 @@ export default (props) => {
       <View style={styles.checkContainer}>{getCheckView(props.doneAt)}</View>
       <View>
         <Text style={[styles.desc, doneOrNotStyle]}>{props.desc}</Text>
-        <Text>{props.estimateAt + ''}</Text>
+        <Text style={styles.date}>{props.estimateAt + ''}</Text>
       </View>
     </View>
   );
@@ -66,5 +66,10 @@ const styles = StyleSheet.create({
     fontFamily: commonStyles.fontFamily,
     color: commonStyles.colors.mainText,
     fontSize: 15,
+  },
+  date: {
+    fontFamily: commonStyles.fontFamily,
+    color: commonStyles.colors.subText,
+    fontSize: 12,
   },
 });
