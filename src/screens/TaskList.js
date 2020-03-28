@@ -116,5 +116,5 @@ const styles = StyleSheet.create({
   },
   iconBar: {
     flexDirection: 'row',
-  }
+  },
 });
