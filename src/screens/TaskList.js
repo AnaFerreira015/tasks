@@ -44,5 +44,7 @@ const styles = StyleSheet.create({
     fontFamily: commonStyles.fontFamily,
     color: commonStyles.colors.secunday,
     fontSize: 50,
+    marginLeft: 20,
+    marginBottom: 20,
   },
 });
