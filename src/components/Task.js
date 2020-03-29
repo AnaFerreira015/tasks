@@ -46,7 +46,7 @@ export default props => {
     <Swipeable
       renderRightActions={getRightContent}
       renderLeftActions={getLeftContent}
-      onSwipeableOpen={() => props.onDelete && props.onDelete(props.id)}>
+      onSwipeableLeftOpen={() => props.onDelete && props.onDelete(props.id)}>
       <View style={styles.container}>
         <TouchableWithoutFeedback onPress={() => props.onToggleTask(props.id)}>
           <View style={styles.checkContainer}>
