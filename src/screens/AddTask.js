@@ -34,7 +34,7 @@ export default class AddTask extends Component {
           <TextInput
             style={styles.input}
             placeholder="Informe a Descrição..."
-            onChangeText={(desc) => this.setState({desc})}
+            onChangeText={desc => this.setState({desc})}
             value={this.state.desc}
           />
           <View style={styles.buttons}>
@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
   header: {
     fontFamily: commonStyles.fontFamily,
     backgroundColor: commonStyles.colors.today,
-    color: commonStyles.colors.secunday,
+    color: commonStyles.colors.secondary,
     textAlign: 'center',
     padding: 15,
     fontSize: 18,

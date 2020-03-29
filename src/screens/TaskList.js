@@ -54,16 +54,16 @@ export default class TaskList extends Component {
     if (this.state.showDoneTasks) {
       visibleTasks = [...this.state.tasks];
     } else {
-      const pending = (task) => task.doneAt === null;
+      const pending = task => task.doneAt === null;
       visibleTasks = this.state.tasks.filter(pending);
     }
 
     this.setState({visibleTasks});
   };
 
-  toggleTask = (taskId) => {
+  toggleTask = taskId => {
     const tasks = [...this.state.tasks];
-    tasks.forEach((task) => {
+    tasks.forEach(task => {
       if (task.id === taskId) {
         task.doneAt = task.doneAt ? null : new Date();
       }
@@ -73,7 +73,9 @@ export default class TaskList extends Component {
   };
 
   render() {
-    const today = moment().locale('pt-br').format('ddd, D [de] MMMM');
+    const today = moment()
+      .locale('pt-br')
+      .format('ddd, D [de] MMMM');
     return (
       <View style={styles.container}>
         <AddTask
@@ -86,7 +88,7 @@ export default class TaskList extends Component {
               <Icon
                 name={this.state.showDoneTasks ? 'eye' : 'eye-slash'}
                 size={20}
-                color={commonStyles.colors.secunday}
+                color={commonStyles.colors.secondary}
               />
             </TouchableOpacity>
           </View>
@@ -98,7 +100,7 @@ export default class TaskList extends Component {
         <View style={styles.taskList}>
           <FlatList
             data={this.state.visibleTasks}
-            keyExtractor={(item) => `${item.id}`}
+            keyExtractor={item => `${item.id}`}
             renderItem={({item}) => (
               <Task {...item} toggleTask={this.toggleTask} />
             )}
@@ -108,7 +110,7 @@ export default class TaskList extends Component {
           style={styles.addButton}
           activeOpacity={0.7}
           onPress={() => this.setState({showAddTask: true})}>
-          <Icon name="plus" size={20} color={commonStyles.colors.secunday} />
+          <Icon name="plus" size={20} color={commonStyles.colors.secondary} />
         </TouchableOpacity>
       </View>
     );
@@ -131,14 +133,14 @@ const styles = StyleSheet.create({
   },
   title: {
     fontFamily: commonStyles.fontFamily,
-    color: commonStyles.colors.secunday,
+    color: commonStyles.colors.secondary,
     fontSize: 50,
     marginLeft: 20,
     marginBottom: 20,
   },
   subtitle: {
     fontFamily: commonStyles.fontFamily,
-    color: commonStyles.colors.secunday,
+    color: commonStyles.colors.secondary,
     fontSize: 20,
     marginLeft: 20,
     marginBottom: 20,
