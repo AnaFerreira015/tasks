@@ -22,5 +22,5 @@ Seeing **device** in the right column means the device is connected
 
 ### Game execution:
 
-<img src="result.gif" alt="Projeto tass sendo executado" width="25%">
+<img src="result.gif" alt="Projeto tass sendo executado" width="30%" align-items="center">
 <br/>
