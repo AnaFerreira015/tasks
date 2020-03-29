@@ -10,14 +10,13 @@ import {
   Alert,
 } from 'react-native';
 
-import commonStyles from '../commonStyles';
-import todayImage from '../../assets/imgs/today.jpg';
-
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 import moment from 'moment';
 import 'moment/locale/pt-br';
 
+import commonStyles from '../commonStyles';
+import todayImage from '../../assets/imgs/today.jpg';
 import Task from '../components/Task';
 import AddTask from './AddTask';
 
