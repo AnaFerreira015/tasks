@@ -1,5 +1,6 @@
 # tasks
 Offline version: ready
+<br>
 Online Version: under development
 
 ## Check if your device is connecting correctly to ADB, Android Debug Bridge
