@@ -20,7 +20,7 @@ Seeing **device** in the right column means the device is connected
 ### iOS
 ``react-native log-ios``
 
-### Game execution:
+### Project execution:
 
-<img src="result.gif" alt="Projeto tass sendo executado" width="30%" align-items="center">
+<img src="result.gif" alt="Projeto tass sendo executado" width="30%">
 <br/>
