@@ -3,13 +3,16 @@ import {View, StyleSheet} from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 const CheckView = ({doneAt}) => {
+  const iconSize = 20;
+  const iconColor = '#FFF';
+
   if (doneAt == null) {
     return <View style={[styles.container, styles.pending]} />;
   }
 
   return (
     <View style={[styles.container, styles.done]}>
-      <Icon name="check" size={20} color="#FFF" />
+      <Icon name="check" size={iconSize} color={iconColor} />
     </View>
   );
 };
