@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {View, StyleSheet} from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
@@ -15,6 +16,14 @@ const CheckView = ({doneAt}) => {
       <Icon name="check" size={iconSize} color={iconColor} />
     </View>
   );
+};
+
+CheckView.propTypes = {
+  doneAt: PropTypes.instanceOf(Date),
+};
+
+CheckView.defaultProps = {
+  doneAt: null,
 };
 
 const styles = StyleSheet.create({
