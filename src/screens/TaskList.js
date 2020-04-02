@@ -133,6 +133,19 @@ export default class TaskList extends Component {
     }
   };
 
+  getColor = () => {
+    switch (this.props.daysAhead) {
+      case 0:
+        return commonStyles.colors.today;
+      case 1:
+        return commonStyles.colors.tomorrow;
+      case 7:
+        return commonStyles.colors.week;
+      default:
+        return commonStyles.colors.month;
+    }
+  };
+
   render() {
     const today = moment()
       .locale('pt-br')
@@ -181,7 +194,7 @@ export default class TaskList extends Component {
           />
         </View>
         <TouchableOpacity
-          style={styles.addButton}
+          style={[styles.addButton, {backgroundColor: this.getColor()}]}
           activeOpacity={0.7}
           onPress={() => this.setState({showAddTask: true})}>
           <Icon name="plus" size={20} color={commonStyles.colors.secondary} />
@@ -232,7 +245,6 @@ const styles = StyleSheet.create({
     width: 50,
     height: 50,
     borderRadius: 25,
-    backgroundColor: commonStyles.colors.today,
     justifyContent: 'center',
     alignItems: 'center',
   },
