@@ -16,9 +16,13 @@ import axios from 'axios';
 import moment from 'moment';
 import 'moment/locale/pt-br';
 
+import todayImage from '../../assets/imgs/today.jpg';
+import tomorrowImage from '../../assets/imgs/tomorrow.jpg';
+import weekImage from '../../assets/imgs/week.jpg';
+import monthImage from '../../assets/imgs/month.jpg';
+
 import {server, showError} from '../common';
 import commonStyles from '../commonStyles';
-import todayImage from '../../assets/imgs/today.jpg';
 import Task from '../components/Task';
 import AddTask from './AddTask';
 
@@ -116,6 +120,19 @@ export default class TaskList extends Component {
     }
   };
 
+  getImage = () => {
+    switch (this.props.daysAhead) {
+      case 0:
+        return todayImage;
+      case 1:
+        return tomorrowImage;
+      case 7:
+        return weekImage;
+      default:
+        return monthImage;
+    }
+  };
+
   render() {
     const today = moment()
       .locale('pt-br')
@@ -127,7 +144,7 @@ export default class TaskList extends Component {
           onCancel={() => this.setState({showAddTask: false})}
           onSave={this.addTask}
         />
-        <ImageBackground source={todayImage} style={styles.background}>
+        <ImageBackground source={this.getImage()} style={styles.background}>
           <View style={styles.iconBar}>
             <TouchableOpacity
               onPress={() => this.props.navigation.openDrawer()}>
