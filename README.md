@@ -8,6 +8,9 @@ Online Version: under development
 <br>
 Seeing **device** in the right column means the device is connected
 
+## To install dependencies on your machine
+``npm install``
+
 ## To run the application without an emulator (run via USB)
 ### Android
 ``react-native run-android``
@@ -22,7 +25,27 @@ Seeing **device** in the right column means the device is connected
 ### iOS
 ``react-native log-ios``
 
-### Project execution:
+## Project execution:
+### Register account
+<img src="./assets/imgs/register.gif" alt="Criação de usuário na aplicação" width="30%">
+<br/>
 
-<img src="./assets/imgs/result.gif" alt="Projeto tasks sendo executado" width="30%">
+### Login
+<img src="./assets/imgs/register.gif" alt="Login de usuário" width="30%">
+<br/>
+
+### Add tasks
+<img src="./assets/imgs/addTask.gif" alt="Adicionando as tarefas" width="30%">
+<br/>
+
+### View tasks
+<img src="./assets/imgs/viewTask.gif" alt="Adicionando as tarefas" width="30%">
+<br/>
+
+### Delete task
+<img src="./assets/imgs/deleteTask.gif" alt="Adicionando as tarefas" width="30%">
+<br/>
+
+### Logout
+<img src="./assets/imgs/logout.gif" alt="Adicionando as tarefas" width="30%">
 <br/>
