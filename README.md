@@ -5,7 +5,9 @@ Online Version: under development
 
 ## Check if your device is connecting correctly to ADB, Android Debug Bridge
 ``adb devices``
-Seeing **device** in the right column means the device is connected
+<br>
+Seeing **device** in the right column means the device is connected. Example:
+<img src="devices.png" alt="Dispositivos conectados">
 
 ## To run the application without an emulator (run via USB)
 ### Android
@@ -23,5 +25,5 @@ Seeing **device** in the right column means the device is connected
 
 ### Project execution:
 
-<img src="result.gif" alt="Projeto tass sendo executado" width="30%">
+<img src="./assets/imgs/result.gif" alt="Projeto tasks sendo executado" width="30%">
 <br/>
