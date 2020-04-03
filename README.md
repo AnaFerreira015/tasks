@@ -7,6 +7,7 @@ Online Version: under development
 ``adb devices``
 <br/>
 Seeing **device** in the right column means the device is connected. Example:
+<br/>
 <img src="./assets/imgs/devices.png" alt="Dispositivos conectados">
 <br/>
 
