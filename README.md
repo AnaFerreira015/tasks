@@ -31,7 +31,7 @@ Seeing **device** in the right column means the device is connected
 <br/>
 
 ### Login
-<img src="./assets/imgs/register.gif" alt="Login de usuário" width="30%">
+<img src="./assets/imgs/login_1.gif" alt="Login de usuário" width="30%">
 <br/>
 
 ### Add tasks
