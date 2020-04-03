@@ -8,7 +8,7 @@ Online Version: under development
 <br>
 Seeing **device** in the right column means the device is connected. Example:
 <br>
-<img src="devices.png" alt="Dispositivos conectados">
+![Dispositivos conectados](devices.png)
 
 ## To run the application without an emulator (run via USB)
 ### Android
