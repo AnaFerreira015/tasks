@@ -6,7 +6,8 @@ Online Version: under development
 ## Check if your device is connecting correctly to ADB, Android Debug Bridge
 ``adb devices``
 <br>
-Seeing **device** in the right column means the device is connected
+Seeing **device** in the right column means the device is connected. Example:
+<img src="./assets/imgs/devices.png" alt="Dispositivos conectados">
 
 ## To install dependencies on your machine
 ``npm install``
