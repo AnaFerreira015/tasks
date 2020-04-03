@@ -6,9 +6,7 @@ Online Version: under development
 ## Check if your device is connecting correctly to ADB, Android Debug Bridge
 ``adb devices``
 <br>
-Seeing **device** in the right column means the device is connected. Example:
-<br>
-![Dispositivos conectados](devices.png)
+Seeing **device** in the right column means the device is connected
 
 ## To run the application without an emulator (run via USB)
 ### Android
