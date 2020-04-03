@@ -7,6 +7,7 @@ Online Version: under development
 ``adb devices``
 <br>
 Seeing **device** in the right column means the device is connected. Example:
+<br>
 <img src="devices.png" alt="Dispositivos conectados">
 
 ## To run the application without an emulator (run via USB)
