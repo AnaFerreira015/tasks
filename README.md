@@ -1,9 +1,9 @@
-# Tasks :memo:
+# :memo: Tasks 
 Offline version: ready
 <br>
 Online Version: ready :tada:
 
-## Check if your device is connecting correctly to ADB, Android Debug Bridge
+## :heavy_check_mark: :iphone: Check if your device is connecting correctly to ADB, Android Debug Bridge
 ``adb devices``
 <br/>
 Seeing **device** in the right column means the device is connected. Example:
